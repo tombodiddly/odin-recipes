@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(77, 77, 77);
+}
+
+h1 {
+    font-size: 4vw;
+    color: rgb(0, 255, 170);
+    text-shadow: 2px 1px 3px #757575;
+    pointer-events:none;
+}
+.recipe {
+    height: 30vh;
+    width: auto;
+    position: relative;
+    text-align: center;
+    box-shadow: 2px 2px 8px #000000;
+    overflow: hidden;
+}
+.image {
+    height: 30vh;
+    width: 100vmax;
+    object-fit: cover;
+}
+
+.centered {
+    font-family: sans-serif;
+    color: white;
+    width:fit-content;
+    font-size: 8vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -66.7%);
+    text-shadow: 2px 2px 8px #000000;
+    pointer-events:none;
+    display: inline;
+    line-height: 95%;
+    transition: .25s ease;
+    text-anchor: middle;
+  }
+
+  .recipe:hover .image {
+      filter: saturate(-30%);
+      filter: contrast(50%);
+  }
+
+  .recipe:hover .centered {
+      color: rgb(255, 251, 0);
+      font-size: 8.5vh;
+      text-shadow: 1px 1px 3px #8b8b8b;
+  }
